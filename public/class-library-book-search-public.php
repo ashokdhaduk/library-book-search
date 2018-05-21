@@ -279,7 +279,7 @@ class Library_Book_Search_Public {
 	 * @since    1.0.0
 	 * @return   file    $template    Returns Template to be used as a single page for Books
 	 */
-	public function load_single_book_template() {
+	public function load_single_book_template( $template ) {
 
 	    global $post;
 
