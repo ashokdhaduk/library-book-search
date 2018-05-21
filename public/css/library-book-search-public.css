@@ -1,0 +1,89 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ @font-face {
+    font-family: "dashicons";
+    src: url("../fonts/dashicons.eot");
+}
+ 
+@font-face {
+    font-family: "dashicons";
+    src: url(data:application/x-font-woff;charset=utf-8;base64,/* !! Large amount of data removed, see wp-includes/css/dashicons.css for complete data !! */) format("woff"),
+        url("../fonts/dashicons.ttf") format("truetype"),
+        url("../fonts/dashicons.svg#dashicons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+.star-rating .star-full:before {
+    content: "\f155";
+}
+ 
+.star-rating .star-half:before {
+    content: "\f459";
+}
+ 
+.star-rating .star-empty:before {
+    content: "\f154";
+}
+ 
+.star-rating .star {
+    color: #0074A2;
+    display: inline-block;
+    font-family: dashicons;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    height: 20px;
+    line-height: 1;
+    text-align: center;
+    text-decoration: inherit;
+    vertical-align: top;
+    width: 20px;
+}
+
+.book_pagination {
+    display: inline-block;
+}
+
+.book_pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    box-shadow: none !important;
+}
+
+.book_pagination a.jp-current {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.book_pagination a:hover:not(.jp-current) {background-color: #ddd;}
+
+
+/****loader start***/
+div#loading {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 999999;
+}
+div#loading img {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: table;
+    margin: auto;
+    width: 100px;
+}
+/****loader end***/
